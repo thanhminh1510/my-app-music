@@ -1,6 +1,7 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 const PLAYER_STORAGE_KEY = 'F8-PLAYER'
+
 const player  = $('.player')
 const playlist = $('.playlist')
 const heading = $('.dashboard h2')
