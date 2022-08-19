@@ -142,7 +142,7 @@ const app =  {
             const scrollTop =  document.documentElement.scrollTop|| window.scrollY
             const newWidth = cdWitdh - scrollTop;
             
-            cd.style.width = newWidth > 0 ?newWidth +'px': 0;
+            cd.style.width = newWidth > 0 ? newWidth +'px': 0;
             cd.style.opacity = newWidth / cdWitdh
         }
         //  tua song
