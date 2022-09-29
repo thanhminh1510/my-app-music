@@ -86,6 +86,7 @@ const app =  {
             }
         })
     },
+
     loadCurrentSong:function(){ 
         // console.log(audio)
         heading.textContent = this.currentSong.name
@@ -149,6 +150,7 @@ const app =  {
         //  tua song
         progress.oninput = function(e){
             const seekTime = audio.duration / 100 * e.target.value
+            console.log(e.target.value);
             audio.currentTime = seekTime
             progress.onchange = function(){
               audio.play()
@@ -208,7 +210,7 @@ const app =  {
                    _this.loadCurrentSong()
                    _this.render()
                     playbtn.click()
-                   audio.play()
+                    audio.play()
                 }            
             }
         }
